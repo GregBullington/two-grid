@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+  <link rel="stylesheet" href="styl.css">
+  <title>Two Grid</title>
+</head>
+<style>
+  /* This is for wire framing to see our rows/columns */
+  /* body.debug .container,
+  body.debug .container-fluid {
+    outline: 2px double blue;
+    outline-offset: -2px;
+  }
+  body.debug .row {
+    outline: 2px dashed red;
+    outline-offset: -2px;
+  } */
+  body.debug [class*="col-"] {
+    outline: 2px dotted forestgreen;
+    outline-offset: -3px;
+  }
+</style>
+
+<body>
+  <header class="container-fluid">
+    <div class="row text-center align-items-center height">
+      <div class="col-12">
+        <h1>Two Grid Tricks</h1>
+        <div>Wrapper <b>around</b> container or cards <b>inside</b> .col</div>
+      </div>
+    </div>
+  </header>
+  <main class="container-fluid">
+
+    <div class="row text-center bg-blue justify-content-center">
+      <div class="col-12">
+        <h2 class="mt-5 mb-5">Wrapper <b>around</b> .container</h2>
+      </div>
+      <div class="col-12 col-md-5">
+        <div class="text-center">
+          <div class="text-center">
+            <h3 class="strong">Three</h3>
+            <div class="mb-5 mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, soluta illum
+              accusantium aspernatur alias fugit ab cumque delectus, ratione est laborum reprehenderit ullam! Sequi
+              voluptas maxime, inventore quasi deserunt doloribus.</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-5">
+        <div class="text-center">
+          <div class="text-center">
+            <h3 class="strong">Four</h3>
+            <div class="mb-5 mx-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo rerum aliquid,
+              beatae velit veritatis voluptatibus optio inventore sapiente animi laudantium minima? Corporis quo cumque
+              quisquam soluta architecto tenetur dignissimos! Vitae!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row text-center bg-grey justify-content-center">
+      <div class="col-12">
+        <h2 class="mt-5 mb-5">Cards <b>inside</b> .col</h2>
+      </div>
+      <div class="col-12 col-md-5">
+        <div class="card-white h-75">
+          <div class="text-center">
+            <h3 class="strong">Three</h3>
+            <div class="mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus id perferendis
+              facilis suscipit repellendus dolore doloremque voluptatem quas omnis beatae dolorem ut, accusantium, mollitia
+              distinctio. Libero repudiandae quaerat quidem?
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-5">
+        <div class="card-white h-75">
+          <div class="text-center">
+            <h3 class="strong">Four</h3>
+            <div class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, id provident!
+              Asperiores inventore vel voluptas quod consequatur nisi corporis distinctio mollitia cupiditate quaerat dolore, et
+              dolorem placeat! Deleniti, maxime voluptate!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
